@@ -157,7 +157,6 @@
   }
   
   
-  
   /* VIDEO FUNCTION */
   
   $('.exp-video-1').parent().click(function () {
