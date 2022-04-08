@@ -2,7 +2,7 @@
   window.onload = function() {
     var sample = document.getElementById("myAudio");
     sample.play();
-    sample.volume=0.5;
+    sample.volume=0.4;
   };
 
   function closeExperience() {
@@ -119,7 +119,7 @@
     var expVideo = document.getElementById("exp-video-3");
     expVideo.load();
     var sample = document.getElementById("myAudio");
-    sample.volume=0.5;
+    sample.volume=0.4;
   
   }
   
@@ -159,7 +159,7 @@
   
   /* VIDEO FUNCTION */
   
-  $('.exp-video-1').parent().click(function () {
+  $('.dreamscape-menu').parent().click(function () {
     if ($(this).children(".exp-video-1").get(0).paused){        
         $(this).children(".exp-video-1").get(0).play();   
         $(this).children(".dreamscape-menu").fadeOut();

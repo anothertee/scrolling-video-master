@@ -397,7 +397,7 @@ Boarding Pass
   padding-left: 5vw;
 }
 #overlayRight {
-  padding-left: 65vw;
+  padding-left: 62vw;
 }
 
 #overlay {
@@ -616,8 +616,8 @@ animation-fill-mode: both;
 
 #load-iframe {
   padding: 20px;
-  margin-top: 20px;
-  border-radius: 20px;
+  margin: 20px 0 1.5vw 1.5vw;
+  border-radius: 15px;
   background-color: #ccac68;
   border: transparent;
   color: #fff;
@@ -719,7 +719,7 @@ outline: none;
   width: 30vw;
   margin-top: 800px;
   left: 0;
-  margin: 75px 0 0 32px;
+  margin: 75px 0 0 0;
   color: rgba(240 240 240 / 0.1);
   border-radius: 20px;
   background-image: linear-gradient(
