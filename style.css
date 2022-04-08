@@ -438,6 +438,10 @@ animation-fill-mode: both;
     transform: perspective(1000px) scale(1.05) rotateY(360deg);
   }}
   
+.transparent{
+  opacity: 0;
+  
+}  
 
 #overlay h1 {
   text-align: left;
@@ -638,8 +642,6 @@ animation-fill-mode: both;
 }
 
 /*TOUCHPOINT BUTTONS IF THEY DECIDE IS A YES*/
-
-
 #touch {
   width: 100%;
   height: 100%;
@@ -712,6 +714,8 @@ outline: none;
 }
 
 #overlayExperience {
+  display: block;
+  position: relative;
   background: rgba(0,0,0,0.1);
   left: 0;
   width: 30vw;
@@ -737,4 +741,3 @@ animation-duration: 6s;
 animation-iteration-count: infinite;
 animation-fill-mode: both;
 }
-  
