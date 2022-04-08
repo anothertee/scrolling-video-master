@@ -48,10 +48,10 @@ function pageScroll() {
   */
 window.onscroll = function() {
   //Consider setting vid.currentTime inside of the window.onscroll event instead the setInterval.
-  vid.currentTime = window.pageYOffset / 1250;   //changed lenght of video
+  vid.currentTime = window.pageYOffset / 1900;   //changed lenght of video
   //Set the video position that we want to end up at:
 
-  //targetscrollpos = window.pageYOffset / 400;//OLD
+  //targetscrollpos = window.pageYOffset / 400;//OLD1250
 
   //move the red dot to a position across the side of the screen
   //that indicates how far we've scrolled.
