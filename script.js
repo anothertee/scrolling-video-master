@@ -112,7 +112,9 @@ overlays.forEach((overlay) => {
     }, 1000);
   });
 });
+
 /*POPUP ELEMENT*/
+
 function openNewExperience() {
   var x = document.getElementById('newExp');
   if (x.style.display === 'flex') {
@@ -121,7 +123,6 @@ function openNewExperience() {
     x.style.display = 'flex';
   }
   var iframe = document.getElementById('newExp');
-  iframe.src = '/nouroexp.html';
+  iframe.src = './nouroexp.html';
 }
-
 
