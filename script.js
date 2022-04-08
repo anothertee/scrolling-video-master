@@ -154,6 +154,17 @@ function expandThird() {
     x.style.display = "block";
   }
 }
+/*POPUP ELEMENT*/
+function openNewExperience() {
+  var x = document.getElementById('newExp');
+  if (x.style.display === 'flex') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'flex';
+  }
+  var iframe = document.getElementById('newExp');
+  iframe.src = './nouroexp.html';
+}
 
 
 
