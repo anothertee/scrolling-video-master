@@ -169,7 +169,7 @@
         $(this).children(".dreamscape-menu").fadeIn();
       }
   });
-  
+
   $('.exp-video-2').parent().click(function () {
     if ($(this).children(".exp-video-2").get(0).paused){        
         $(this).children(".exp-video-2").get(0).play();   
