@@ -399,6 +399,7 @@ Boarding Pass
 #overlayRight {
   padding-left: 65vw;
 }
+
 #overlay {
   display: block;
   position: relative;
@@ -425,69 +426,18 @@ animation-duration: 6s;
 animation-iteration-count: infinite;
 animation-fill-mode: both;
 }
-
-
 :root {
---main-angle: 15deg;
---secondary-angle: 22deg;
-}
-
-@keyframes move {
-0% {
-  transform: perspective(1000px) scale(1.05) rotateX(var(--main-angle))
-    rotateY(calc(var(--main-angle) * -1));
-}
-
-12.5% {
-  transform: perspective(1000px) scale(1.05) rotateX(var(--secondary-angle))
-    rotateY(0);
-}
-
-25% {
-  transform: perspective(1000px) scale(1.05) rotateX(var(--main-angle))
-    rotateY(var(--main-angle));
-}
-
-37.5% {
-  transform: perspective(1000px) scale(1.05) rotateX(0)
-    rotateY(var(--secondary-angle));
-}
-
-50% {
-  transform: perspective(1000px) scale(1.05)
-    rotateX(calc(var(--main-angle) * -1)) rotateY(var(--main-angle));
-}
-
-62.5% {
-  transform: perspective(1000px) scale(1.05)
-    rotateX(calc(var(--secondary-angle) * -1)) rotateY(0);
-}
-
-75% {
-  transform: perspective(1000px) scale(1.05)
-    rotateX(calc(var(--main-angle) * -1))
-    rotateY(calc(var(--main-angle) * -1));
-}
-
-87.5% {
-  transform: perspective(1000px) scale(1.05) rotateX(0)
-    rotateY(calc(var(--secondary-angle) * -1));
-}
-
-100% {
-  transform: perspective(1000px) scale(1.05) rotateX(var(--main-angle))
-    rotateY(calc(var(--main-angle) * -1));
-}
-}
-
-@keyframes spin {
-0% {
-  transform: perspective(1000px) scale(1.05) rotateY(0deg);
-}
-100% {
-  transform: perspective(1000px) scale(1.05) rotateY(360deg);
-}}
-
+  --main-angle: 15deg;
+  --secondary-angle: 22deg;
+  }
+  @keyframes spin {
+  0% {
+    transform: perspective(1000px) scale(1.05) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) scale(1.05) rotateY(360deg);
+  }}
+  
 
 #overlay h1 {
   text-align: left;
@@ -513,87 +463,6 @@ animation-fill-mode: both;
 }
 #overlay a {
   color: #fff;
-}
-/*****************************/
-#clock-container {
-  display: block;
-  position: relative;
-  width: 20vw;
-  overflow: hidden;
-  margin-top: 800px;
-  left: 1vw;
-}
-#face {
-  stroke-width: 2px;
-  stroke: #fff;
-}
-#hour,
-#min,
-#sec {
-  stroke-width: 1px;
-  fill: #333;
-  stroke: #555;
-}
-#sec {
-  stroke: #f55;
-}
-/**********Pendulum*************/
-#watch {
-  width: 12vw;
-  height: auto;
-  margin: 0 auto;
-  transform-origin: center top;
-  transform: rotate(-30deg);
-  top: -10px;
-  margin-top: 800px;
-  animation: sway 2.2s infinite alternate ease-in-out;
-}
-#watch img.watch {
-  width: 100%;
-  height: auto;
-}
-img.seconds {
-  position: absolute;
-  width: 8%;
-  height: auto;
-  bottom: 11.75%;
-  left: 45%;
-  transform-origin: center 72.4%;
-  animation: secondcount 60s infinite linear;
-}
-/**********PolaEffect**********/
-#pola {
-  position: relative;
-  margin-top: 800px;
-  left: 60vw;
-  margin: auto 1.2rem;
-  float: left;
-  border: 1.25vw solid #e3e4d3;
-  border-bottom-width: 2.5vw;
-  -webkit-transition: 3s box-shadow ease-in;
-  -moz-transition: 3s box-shadow ease-in;
-  -o-transition: 3s box-shadow ease-in;
-  transition: 3s box-shadow ease-in;
-  box-shadow: 0 0 10vw 10vw #1d1904 inset, 0 0 0.15vw 0.3vw rgba(0,0,0,0.07);
-  width: 20vw;
-  height: 18.2vw;
-  background-position: center;
-  background-image: url("http://demosthenes.info/assets/images/christine-adams.jpg");
-  background-size: 20vw 20vw;
-  background-repeat: no-repeat;
-  -webkit-filter: sepia(50%);
-  -o-filter: sepia(50%);
-  -ms-filter: sepia(50%);
-  -moz-filter: sepia(50%);
-  filter: sepia(50%);
-}
-#pola:hover {
-  box-shadow: 0 0 100px 0 rgba(29,25,4,0.8) inset, 0 0 3px 6px rgba(0,0,0,0.07);
-  -webkit-filter: sepia(20%);
-  -o-filter: sepia(20%);
-  -ms-filter: sepia(20%);
-  -moz-filter: sepia(20%);
-  filter: sepia(20%);
 }
 /**********VideoSetup**********/
 #set-height {
@@ -768,4 +637,104 @@ img.seconds {
   overflow: hidden;
 }
 
+/*TOUCHPOINT BUTTONS IF THEY DECIDE IS A YES*/
 
+
+#touch {
+  width: 100%;
+  height: 100%;
+}
+
+button, input[type="submit"], input[type="reset"] {
+background: transparent;
+color: inherit;
+font: inherit;
+cursor: pointer;
+outline: none;
+
+}
+
+#launchButton {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ccac68;
+  border: transparent;
+  color: #fff;
+}
+
+#launchButton:hover {
+  background-color: #a18247;
+}
+
+.touchpoint {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+.touchpoint:active {
+  box-shadow: 0 1px 24px -1px rgba(255, 255, 255, 0.8);
+}
+
+#exitButton {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+
+#overlayExperience h1 {
+  text-align: left;
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#overlayExperience p {
+  text-align: left;
+  width: 28vw;
+  color: #a18247;
+  font-family: inherit;
+  margin-bottom: 1vw;
+  line-height: normal;
+  font-size: 1vw;
+  padding: 1vw;
+  padding-left: 1.5vw;
+}
+
+#overlayExperience {
+  background: rgba(0,0,0,0.1);
+  left: 0;
+  width: 30vw;
+  margin-top: 800px;
+  left: 0;
+  margin: 75px 0 0 32px;
+  color: rgba(240 240 240 / 0.1);
+  border-radius: 20px;
+  background-image: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 0.9) 80%,
+    rgba(255 255 255 / 0%) 100%
+);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 24px -1px rgba(0 0 0 / 10%);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+
+}
+/*   animation-name: spin; */
+animation-timing-function: linear;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+}
+  

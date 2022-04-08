@@ -126,3 +126,53 @@ function openNewExperience() {
   iframe.src = './nouroexp.html';
 }
 
+
+/*TOUCH POINTS*/
+function expandCardOne() {
+  var x = document.getElementById("infoCardOne");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function expandCardTwo() {
+  var x = document.getElementById("infoCardTwo");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function expandCardThree() {
+  var x = document.getElementById("infoCardThree");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function expandCardFour() {
+  var x = document.getElementById("infoCardFour");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function expandCardFive() {
+  var x = document.getElementById("infoCardFive");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function expandCardSix() {
+  var x = document.getElementById("infoCardSix");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
