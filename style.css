@@ -323,8 +323,8 @@ Boarding Pass
   position: relative;
   top: 43%;
  
- 
 }
+
 #intro a {
   color: #fff;
 }
@@ -733,9 +733,5 @@ outline: none;
   will-change: transform;
 
 }
-/*   animation-name: spin; */
-animation-timing-function: linear;
-animation-duration: 6s;
-animation-iteration-count: infinite;
-animation-fill-mode: both;
-}
+
+
