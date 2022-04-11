@@ -1,19 +1,19 @@
 /* CORE STYLES */
 
-
-
 body {
-  background: #000;
+  background: #0e0e0e;
   margin: 0;
   font-size: 90%;
   font-family: proxima-nova, sans-serif;
+  overflow-x: hidden;
 
 font-weight: 400;
 
 font-style: normal;
 }
-/******FadingTitle******/
 
+
+/******FadingTitle******/
 
 h1 {
   font-family: proxima-nova, sans-serif;
@@ -390,14 +390,12 @@ Boarding Pass
   transition: all ease 0.5s;
 }
 /*****************************/
-#overlayCenter {
-  padding-left: 35vw;
-}
+
 #overlayLeft {
-  padding-left: 5vw;
+  padding-left: 4vw;
 }
 #overlayRight {
-  padding-left: 62vw;
+  padding-left: 64vw;
 }
 
 #overlay {
@@ -440,7 +438,7 @@ animation-fill-mode: both;
   
 .transparent{
   opacity: 0;
-}  
+}
 
 #overlay h1 {
   text-align: left;
@@ -451,22 +449,8 @@ animation-fill-mode: both;
   font-size: 1.5vw;
   font-weight: 400;
   text-transform: uppercase;
-  
 }
-#overlay p {
-  text-align: left;
-  width: 28vw;
-  color: #a18247;
-  font-family: inherit;
-  margin-bottom: 1vw;
-  line-height: normal;
-  font-size: 1vw;
-  padding: 1vw;
-  padding-left: 1.5vw;
-}
-#overlay a {
-  color: #fff;
-}
+
 /**********VideoSetup**********/
 #set-height {
   display: block;
@@ -681,25 +665,23 @@ outline: none;
 
 #overlayExperience h1 {
   text-align: left;
-  padding-top: 1.5vw;
-  padding-left: 1.5vw;
+  padding: 2vw 2.5vw 0 2vw;
   color: #fff;
   font-family: inherit;
   font-size: 1.5vw;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
 }
 
 #overlayExperience p {
   text-align: left;
-  width: 28vw;
   color: #a18247;
   font-family: inherit;
   margin-bottom: 1vw;
   line-height: normal;
   font-size: 1vw;
-  padding: 1vw;
-  padding-left: 1.5vw;
+  padding: 2vw;
 }
 
 #overlayExperience {
@@ -710,16 +692,17 @@ outline: none;
   width: 30vw;
   margin-top: 800px;
   left: 0;
-  margin: 75px 0 0 0;
+  margin: 25px 0 0 0;
   color: rgba(240 240 240 / 0.1);
   border-radius: 20px;
+  border-style: 2px solid #fff;
   background-image: linear-gradient(
     150deg,
     rgba(0, 0, 0, 0.9) 80%,
     rgba(255 255 255 / 0%) 100%
 );
   backdrop-filter: blur(20px);
-  box-shadow: 0 1px 24px -1px rgba(0 0 0 / 10%);
+  box-shadow: 5px 5px 15px -3px #63636335;
   transition: transform 0.2s ease-out;
   will-change: transform;
 
@@ -751,8 +734,8 @@ outline: none;
 
 
 /*   animation-name: spin; */
-animation-timing-function: linear;
+/* animation-timing-function: linear;
 animation-duration: 6s;
 animation-iteration-count: infinite;
 animation-fill-mode: both;
-}
+} */
