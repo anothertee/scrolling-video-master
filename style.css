@@ -1,12 +1,11 @@
 /* CORE STYLES */
 
-
-
 body {
   background: #0e0e0e;
   margin: 0;
   font-size: 90%;
   font-family: proxima-nova, sans-serif;
+  overflow-x: hidden;
 
 font-weight: 400;
 
@@ -82,6 +81,9 @@ h2:hover {
     height: 50%;
   }
 
+  .message {
+    margin: auto;
+  }
 /******FLIGHT TICKET******/
 
 
@@ -423,14 +425,12 @@ Boarding Pass
   transition: all ease 0.5s;
 }
 /*****************************/
-#overlayCenter {
-  padding-left: 35vw;
-}
+
 #overlayLeft {
-  padding-left: 5vw;
+  padding-left: 4vw;
 }
 #overlayRight {
-  padding-left: 62vw;
+  padding-left: 64vw;
 }
 
 #overlay {
@@ -473,7 +473,7 @@ animation-fill-mode: both;
   
 .transparent{
   opacity: 0;
-}  
+}
 
 #overlay h1 {
   text-align: left;
@@ -484,22 +484,8 @@ animation-fill-mode: both;
   font-size: 1.5vw;
   font-weight: 400;
   text-transform: uppercase;
-  
 }
-#overlay p {
-  text-align: left;
-  width: 28vw;
-  color: #a18247;
-  font-family: inherit;
-  margin-bottom: 1vw;
-  line-height: normal;
-  font-size: 1vw;
-  padding: 1vw;
-  padding-left: 1.5vw;
-}
-#overlay a {
-  color: #fff;
-}
+
 /**********VideoSetup**********/
 #set-height {
   display: block;
@@ -714,25 +700,23 @@ outline: none;
 
 #overlayExperience h1 {
   text-align: left;
-  padding-top: 1.5vw;
-  padding-left: 1.5vw;
+  padding: 2vw 2.5vw 0 2vw;
   color: #fff;
   font-family: inherit;
   font-size: 1.5vw;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
 }
 
 #overlayExperience p {
   text-align: left;
-  width: 28vw;
   color: #a18247;
   font-family: inherit;
   margin-bottom: 1vw;
   line-height: normal;
   font-size: 1vw;
-  padding: 1vw;
-  padding-left: 1.5vw;
+  padding: 2vw;
 }
 
 #overlayExperience {
@@ -743,9 +727,10 @@ outline: none;
   width: 30vw;
   margin-top: 800px;
   left: 0;
-  margin: 75px 0 0 0;
+  margin: 25px 0 0 0;
   color: rgba(240 240 240 / 0.1);
   border-radius: 20px;
+  border-style: 2px solid #fff;
   background-image: linear-gradient(
     150deg,
     rgba(0, 0, 0, 0.9) 80%,
