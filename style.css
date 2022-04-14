@@ -3,7 +3,7 @@
 
 
 body {
-  background: #fff;
+  background: #0e0e0e;
   margin: 0;
   font-size: 90%;
   font-family: proxima-nova, sans-serif;
@@ -12,8 +12,9 @@ font-weight: 400;
 
 font-style: normal;
 }
-/******FadingTitle******/
 
+
+/******FadingTitle******/
 
 h1 {
   font-family: proxima-nova, sans-serif;
@@ -48,6 +49,38 @@ h2:hover {
   position: initial;
   opacity: 1;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #2c394f #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+    opacity: 0;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2c394f;
+    border-radius: 50px;
+    border: none;
+  }
+
+  #logo-gif {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 20px 10px;
+    height: 50%;
+  }
 
 /******FLIGHT TICKET******/
 
@@ -719,7 +752,7 @@ outline: none;
     rgba(255 255 255 / 0%) 100%
 );
   backdrop-filter: blur(20px);
-  box-shadow: 0 1px 24px -1px rgba(0 0 0 / 10%);
+  box-shadow: 5px 5px 15px -3px #63636335;
   transition: transform 0.2s ease-out;
   will-change: transform;
 
